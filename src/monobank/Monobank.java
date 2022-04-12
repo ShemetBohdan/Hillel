@@ -7,12 +7,11 @@ public class Monobank {
     static String name;
     static String surname;
     static double deposit;
-    static double sumPercent;           //сумма процентов начисленных на депозит
-    static final double percent = 10.5; //годовая процентная ставка
+    static double sumPercent;
+    static final double percent = 10.5;
 
     public static void main(String[] args) {
 
-        // Ввод исходных данных
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input name depositor:");
         name =scanner.nextLine();
@@ -24,8 +23,6 @@ public class Monobank {
         deposit =scanner.nextDouble();
         scanner.close();
 
-        //Вывод данных
-        // Расчет суммы депозита сроком на год, пять и десять лет
         System.out.println("---------------");
         System.out.println ("Name: "+ name+ "\n"+ "Surname: "+ surname+ "\n"+ "Deposit: "+ deposit +(" uan"));
         sumPercent = deposit * percent /100 * 1;
