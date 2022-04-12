@@ -11,11 +11,6 @@ public class NextTask {
         String[] word2  = {"Ha","ve","a","ni","ce","da","y"};
         String array1 = Arrays.stream(word1).collect(Collectors.joining());
         String array2 = Arrays.stream(word2).collect(Collectors.joining());
-        if (array1.equals(array2)){
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+        System.out.println(array1.equals(array2));
     }
-
 }
